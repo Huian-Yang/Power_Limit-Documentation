@@ -15,6 +15,9 @@ Inspiration from: https://github.com/MaxwellDemonLin/Motor-modeling-and-power-co
 ### Equation Two 
 ![image](https://github.com/user-attachments/assets/514666e8-ce61-4f71-8722-056b743289b5)
 
+Parameters found by fitting data in: https://colab.research.google.com/drive/16uwgM2-j9tNm_o-lTVdiM7y89YTPowTO
+Testing and Simulation: https://docs.google.com/spreadsheets/d/1-i71DQZjjr8q6_uqI1qpkokl9PVYsOEARyKJnDr_CS8/edit?usp=sharing
+
 ## Limit Acceleration Function
 ```c++
 float ChassisSubsystem::limitAcceleration(float desiredRPM, float previousRPM, int power)
