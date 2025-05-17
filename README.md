@@ -1,8 +1,11 @@
 # Power_Limit-Documentation
 
-motor power to current sensor voltage to chassis power
-motor power -> voltage -> chassis power
-Acceleration limiting 
+Limiting power for sustained movement:
+input power from controller to motor voltage to chassis power
+input power -> motor voltage -> output motor power
+
+To prevent spikes: 
+Acceleration limiting (limit rpm of motors)
 
 Values from the controller joystick are converted into an input power to be fed into motors. Before they are fed in, we find a theoretical output motor power that the input joystick motors will provide. We find this theoretical power using equation one and equation two below. If the theoretical output motor power is above what we want, we use a bisection algorithm to scale down the input power until the theoretical output power is below the desired threshold. Then we send those new updated input power values to the motor, which will then output at the desired power limit.
 
