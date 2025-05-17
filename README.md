@@ -4,6 +4,17 @@ motor power to current sensor voltage to chassis power
 motor power -> voltage -> chassis power
 Acceleration limiting 
 
+Inspiration from: https://github.com/MaxwellDemonLin/Motor-modeling-and-power-control/blob/master/ElectricVehiclePowerControl.pdf
+
+## Conversion Equations
+
+### Equation One
+![image](https://github.com/user-attachments/assets/07fa25f9-1ae0-47de-a405-fb86a67493c8)
+![image](https://github.com/user-attachments/assets/84d0b14b-1934-43a9-84f6-20889e1c95e2)
+
+### Equation Two 
+![image](https://github.com/user-attachments/assets/514666e8-ce61-4f71-8722-056b743289b5)
+
 ## Limit Acceleration Function
 ```c++
 float ChassisSubsystem::limitAcceleration(float desiredRPM, float previousRPM, int power)
