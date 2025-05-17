@@ -1,5 +1,9 @@
 # Power_Limit-Documentation
 
+motor power to current sensor voltage to chassis power
+motor power -> voltage -> chassis power
+Acceleration limiting 
+
 ## Limit Acceleration Function
 ```c++
 float ChassisSubsystem::limitAcceleration(float desiredRPM, float previousRPM, int power)
